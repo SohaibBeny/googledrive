@@ -1,0 +1,18 @@
+.home-2-ii{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.home-2-ii{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+.home-2-ii h5{
+    margin: 10px 0px;
+}
+.home-4a{
+    margin-top: 15px;
+    height: 90%;
+}

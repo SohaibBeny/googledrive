@@ -1,0 +1,124 @@
+.home-sec{
+    background-color:#F5F9FA; 
+    width: 83%;
+    padding: 10px 17px;
+}
+.home-1{
+    background-color: white;
+    padding: 17px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-1-a{
+    display: flex;
+    align-items: center;
+}
+
+.home-1-a h6{
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+.home-1-a .icon-1{
+    font-size: 20px;
+}
+
+.home-1-b{
+   display: flex;
+   align-items: center;
+}
+.home-1-b .icon-1{
+    margin: 0px 5px;
+    font-size: 18px;
+}
+.home-b-1{
+    width: 2px;
+    height: 25px;
+    background-color:#F5F5F5;
+    margin: 0px 5px;
+}
+
+/* ------------------------------------------- */
+
+.home-2{
+    margin-top: 15px;
+}
+.home-2-i{
+    background-color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+.home-2-a{
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    width: 25%;
+    
+}
+.home-2-a:hover{
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+.home-img6{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.home-img7{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.home-img8{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.home-2-b{
+    display: flex;
+    align-items: center;
+   background-color: #F5F5F5;
+   padding: 10px;
+}
+.home-2-b .icon-1{
+    font-size: 22px;
+    margin-right: 5px;
+    color: #29ABE1;
+}
+.home-2-b p{
+    margin-bottom: 0px;
+    font-size: 13px;
+}
+/* --------------------------------- */
+.home-3{
+    margin-top: 15px;
+}
+.home-3 h6{
+    font-family: Gilroy-Meduim, sans-serif;
+}
+.home-3-i{
+    background-color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+.home-3-a{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: 25%;
+}
+.home-3-a p{
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+.home-img{
+    margin-right: 10px;
+}

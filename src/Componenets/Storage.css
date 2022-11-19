@@ -1,0 +1,39 @@
+.Storage {
+    /* margin-left: 25%;
+    margin-top: 10%;
+    margin-right: 7%; */
+    width: 83%;
+    background: #F5F9FA;
+    padding: 10px 17px;
+}
+.Storage__used {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 30px 17px 15px;
+    font-family: 'Gilroy-Medium',sans-serif;
+    font-size: 14px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-top: 7px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.Storage__allfiles {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 64px 13px 15px;
+    font-family: 'Gilroy-Medium',sans-serif;
+    font-size: 15px;
+    background: #FFFF;
+    border-radius: 8px;
+    margin-top: 7px;
+}
+.home6{
+    margin: 0px 5px;
+    font-size: 14px;
+    font-family: 'Gilroy-Medium',sans-serif;
+}
+.icon-st{
+    font-size: 18px;
+    margin-right: 7px;
+}
