@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home4.css'
+import './Starred1.css'
 import { Icon } from '@iconify/react';
 import img24  from '../Assets/images/home4/pict1.png'
 

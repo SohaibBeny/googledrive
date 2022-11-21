@@ -4,6 +4,9 @@
 @font-face{
     src: url(../src/Assets/Fonts/Gilroy/Gilroy-Bold.ttf);
     font-family: "Gilroy-Bold";
-    font-family: "Gilroy-Medium";
-    font-family: "Gilroy-Regular";
+    
+}
+@font-face{
+    src: url(../src/Assets/Fonts/Gilroy/Gilroy-Medium.ttf);
+    font-family: "Gilroy-Medium";  
 }
