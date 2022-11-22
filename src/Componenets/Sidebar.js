@@ -12,15 +12,15 @@ import { useState, useEffect, useRef } from 'react';
 
 export default function Sidebar() {
 
-  const [opened, setOpened] = useState(false);
+  const [open2, setOpen2] = useState(false);
 
-  let menuRef1 = useRef();
+  let menuRef2 = useRef();
 
   useEffect(() => {
     let handler = (e) => {
-      if (!menuRef1.current.contains(e.target)) {
-        setOpened(false);
-        console.log(menuRef1.current);
+      if (!menuRef2.current.contains(e.target)) {
+        setOpen2(false);
+        console.log(menuRef2.current);
       }
     };
 
@@ -39,12 +39,12 @@ export default function Sidebar() {
         <div className='bar-1'>
           <h4>Brandora Agency</h4>
 
-          <div className='bar-1-a menu-container1' ref={menuRef1}>
+          <div className='bar-1-a menu-container2' ref={menuRef2}>
             <h5>New</h5>
-            <Icon className='icon-1 menu-trigger1' icon="carbon:add" onClick={() => { setOpened(!opened) }} />
+            <Icon className='icon-1 menu-trigger2' icon="carbon:add" onClick={() => { setOpen2(!open2) }} />
           </div>
 
-          <div className={`Drope ${opened ? 'active' : 'inactive'}`} >
+          <div className={`Drop2 ${open2 ? 'active' : 'inactive'}`} >
             <ul>
               <div className='list1'>
                 <Icon className='icon-2' icon="material-symbols:create-new-folder-outline" />

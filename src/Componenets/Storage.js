@@ -14,12 +14,12 @@ export default function Storage() {
 
                     <div className='home-1-b'>
 
-                        <Icon className='icon-1' icon="bx:dots-vertical-rounded" />
                         <Icon className='icon-1' icon="fe:insert-link" />
                         <Icon className='icon-1' icon="prime:user-plus" />
                         <Icon className='icon-1' icon="ph:eye" />
                         <Icon className='icon-1' icon="octicon:trash-24" />
                         <Icon className='icon-1' icon="fluent:info-20-regular" />
+                        <Icon className='icon-1' icon="bx:dots-vertical-rounded" />
                         <div className='home-b-1'></div>
                         <p className='home6'>BackUp</p>
 

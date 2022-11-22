@@ -13,8 +13,30 @@ import img19 from '../Assets/images/home2/pict3.png';
 import img20 from '../Assets/images/home2/pict4.png';
 import img21 from '../Assets/images/home2/pict5.png';
 import img9 from '../Assets/images/home/ms-word3.png'
+import { useState, useEffect, useRef } from 'react';
 
 export default function Home2() {
+    const [open3, setOpen3] = useState(false);
+
+    let menuRef3 = useRef();
+
+    useEffect(() => {
+        let handler = (e) => {
+            if (!menuRef3.current.contains(e.target)) {
+                setOpen3(false);
+                console.log(menuRef3.current);
+            }
+        };
+
+        document.addEventListener("mousedown", handler);
+
+
+        return () => {
+            document.removeEventListener("mousedown", handler);
+        }
+
+    });
+
     return (
         <>
             <section className='home-sec'>
@@ -30,7 +52,30 @@ export default function Home2() {
                         <Icon className='icon-1' icon="fe:insert-link" />
                         <Icon className='icon-1' icon="prime:user-plus" />
                         <Icon className='icon-1' icon="octicon:trash-24" />
-                        <Icon className='icon-1' icon="bx:dots-vertical-rounded" />
+                        
+                        <div className='Dropdown3'>
+                            <div className=' menu-container3' ref={menuRef3}>
+                                <Icon className='icon-1 menu-trigger3' icon="bx:dots-vertical-rounded" onClick={() => { setOpen3(!open3) }} />
+                            </div>
+                            <div className={`Drop3 ${open3 ? 'active' : 'inactive'}`} >
+                                <ul>
+                                    <div className='list1'>
+                                        <Icon className='icon-2' icon="material-symbols:create-new-folder-outline" />
+                                        <li>New Folder</li>
+                                    </div>
+                                    <div className='list1'>
+                                        <Icon className='icon-2' icon="ic:baseline-upload-file" />
+                                        <li>File Upload</li>
+                                    </div>
+                                    <div className='list1'>
+                                        <Icon className='icon-2' icon="material-symbols:drive-folder-upload-outline" />
+                                        <li>Folder Upload</li>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </div>
+
                         <div className='home-b-1'></div>
                         <Icon className='icon-1' icon="eva:list-fill" />
                         <Icon className='icon-1' icon="fluent:info-20-regular" />
@@ -87,7 +132,7 @@ export default function Home2() {
                             </div>
                         </div>
                         <div className='home-2-a'>
-                        <img className='home-img2' src={img6} alt="" />
+                            <img className='home-img2' src={img6} alt="" />
                             <div className='home-2-b'>
                                 <img src={img7} alt="" />
                                 <p>Theory #2</p>
@@ -96,7 +141,7 @@ export default function Home2() {
                         <div className='home-2-a'>
                             <img className='home-img8' src={img21} alt="" />
                             <div className='home-2-b'>
-                            <img src={img7} alt="" />
+                                <img src={img7} alt="" />
                                 <p>Language##</p>
                             </div>
                         </div>
@@ -119,11 +164,11 @@ export default function Home2() {
                                 <p>Lecture #1</p>
                             </div>
                         </div>
-                        
+
                         <div className='home-2-a'>
                             <img className='home-img8' src={img21} alt="" />
                             <div className='home-2-b'>
-                            <img src={img7} alt="" />
+                                <img src={img7} alt="" />
                                 <p>Language##</p>
                             </div>
                         </div>
@@ -147,8 +192,8 @@ export default function Home2() {
 
                     <div className='home-2-i'>
 
-                    <div className='home-2-a'>
-                    <img className='home-img3' src={img9} alt="" />
+                        <div className='home-2-a'>
+                            <img className='home-img3' src={img9} alt="" />
                             <div className='home-2-b'>
                                 <img src={img8} alt="" />
                                 <p>Result #3</p>

@@ -16,15 +16,15 @@ import { useState, useEffect, useRef } from 'react';
 
 
 export default function Home() {
-    const [open, setOpen] = useState(false);
+    const [open1, setOpen1] = useState(false);
 
-    let menuRef = useRef();
+    let menuRef1 = useRef();
 
     useEffect(() => {
         let handler = (e) => {
-            if (!menuRef.current.contains(e.target)) {
-                setOpen(false);
-                console.log(menuRef.current);
+            if (!menuRef1.current.contains(e.target)) {
+                setOpen1(false);
+                console.log(menuRef1.current);
             }
         };
 
@@ -40,13 +40,13 @@ export default function Home() {
         <>
             <section className='home-sec'>
 
-                <div className='home-1 menu-container' ref={menuRef}>
+                <div className='home-1 menu-container1' ref={menuRef1}>
 
-                    <div className='home-1-a menu-trigger' onClick={() => { setOpen(!open) }}>
+                    <div className='home-1-a menu-trigger1' onClick={() => { setOpen1(!open1) }}>
                         <h6>My Drive</h6>
                         <Icon className='icon-1' icon="ci:caret-down" />
                     </div>
-                    <div className={`Drop ${open ? 'active' : 'inactive'}`} >
+                    <div className={`Drop1 ${open1 ? 'active' : 'inactive'}`} >
                         <ul>
                             <div className='list1'>
                                 <Icon className='icon-2' icon="material-symbols:create-new-folder-outline" />
