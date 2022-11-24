@@ -10,3 +10,6 @@
     src: url(../src/Assets/Fonts/Gilroy/Gilroy-Medium.ttf);
     font-family: "Gilroy-Medium";  
 }
+p,h6{
+    margin-bottom: 0px;
+}

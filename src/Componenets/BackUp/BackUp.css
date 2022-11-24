@@ -1,0 +1,39 @@
+.home-1 h6{
+    margin-bottom: 0px;
+    margin: 0px 1px;
+
+}
+.Last-backup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 16px 17px 16px;
+    background-color:  #FFFFFF;
+    border-radius: 8px;
+    margin-top: 7px;
+}
+.Last-backup p{
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 0px;
+}
+.Backup-files{
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 16px 17px 16px;
+    font-family: 'Gilroy-Medium',sans-serif;
+    font-size: 15px;
+    background: #FFFF;
+    border-radius: 8px;
+    margin-top: 7px;
+}
+.Backup-files div{
+    display: flex;
+    align-items: center;  
+}
+.Backup-files div img{
+    margin-right: 6px;
+}
+.Backup-files h6{
+    color: rgba(0, 0, 0, 0.7);
+    font-family: 'Gilroy-Medium',sans-serif;
+}

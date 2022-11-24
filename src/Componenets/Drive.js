@@ -16,6 +16,26 @@ import { useState, useEffect, useRef } from 'react';
 
 
 export default function Home() {
+    const [open3, setOpen3] = useState(false);
+
+    let menuRef3 = useRef();
+
+    useEffect(() => {
+        let handler = (e) => {
+            if (!menuRef3.current.contains(e.target)) {
+                setOpen3(false);
+                console.log(menuRef3.current);
+            }
+        };
+
+        document.addEventListener("mousedown", handler);
+
+
+        return () => {
+            document.removeEventListener("mousedown", handler);
+        }
+
+    });
     const [open1, setOpen1] = useState(false);
 
     let menuRef1 = useRef();
@@ -40,12 +60,15 @@ export default function Home() {
         <>
             <section className='home-sec'>
 
-                <div className='home-1 menu-container1' ref={menuRef1}>
+                <div className='home-1'>
 
-                    <div className='home-1-a menu-trigger1' onClick={() => { setOpen1(!open1) }}>
-                        <h6>My Drive</h6>
-                        <Icon className='icon-1' icon="ci:caret-down" />
+                    <div className='menu-container1' ref={menuRef1}>
+                        <div className='home-1-a menu-trigger1' onClick={() => { setOpen1(!open1) }}>
+                            <h6>My Drive</h6>
+                            <Icon className='icon-1' icon="ci:caret-down" />
+                        </div>
                     </div>
+
                     <div className={`Drop1 ${open1 ? 'active' : 'inactive'}`} >
                         <ul>
                             <div className='list1'>
@@ -64,56 +87,56 @@ export default function Home() {
                             <div className='Docs'>
 
                                 <div className='list1'>
-                                   <div className='list-1-a'>
-                                   <img src={img29} alt="" />
-                                   </div>
+                                    <div className='list-1-a'>
+                                        <img src={img29} alt="" />
+                                    </div>
                                     <li>Docs</li>
                                 </div>
                                 <div className='list2'>
                                     <div className='list-2-a'></div>
-                                    <Icon className='icon-2'icon="grommet-icons:form-next" />
+                                    <Icon className='icon-2' icon="grommet-icons:form-next" />
                                 </div>
 
                             </div>
                             <div className='Docs'>
 
                                 <div className='list1'>
-                                   <div className='list-1-a'>
-                                   <img src={img30} alt="" />
-                                   </div>
+                                    <div className='list-1-a'>
+                                        <img src={img30} alt="" />
+                                    </div>
                                     <li>Sheets</li>
                                 </div>
                                 <div className='list2'>
                                     <div className='list-2-a'></div>
-                                    <Icon className='icon-2'icon="grommet-icons:form-next" />
+                                    <Icon className='icon-2' icon="grommet-icons:form-next" />
                                 </div>
 
                             </div>
                             <div className='Docs'>
 
                                 <div className='list1'>
-                                   <div className='list-1-a'>
-                                   <img src={img31} alt="" />
-                                   </div>
+                                    <div className='list-1-a'>
+                                        <img src={img31} alt="" />
+                                    </div>
                                     <li>Slides</li>
                                 </div>
                                 <div className='list2'>
                                     <div className='list-2-a'></div>
-                                    <Icon className='icon-2'icon="grommet-icons:form-next" />
+                                    <Icon className='icon-2' icon="grommet-icons:form-next" />
                                 </div>
 
                             </div>
                             <div className='Docs'>
 
                                 <div className='list1'>
-                                   <div className='list-1-a'>
-                                   <img src={img32} alt="" />
-                                   </div>
+                                    <div className='list-1-a'>
+                                        <img src={img32} alt="" />
+                                    </div>
                                     <li>Forms</li>
                                 </div>
                                 <div className='list2'>
                                     <div className='list-2-a'></div>
-                                    <Icon className='icon-2'icon="grommet-icons:form-next" />
+                                    <Icon className='icon-2' icon="grommet-icons:form-next" />
                                 </div>
 
                             </div>
@@ -129,7 +152,36 @@ export default function Home() {
                         <Icon className='icon-1' icon="fe:insert-link" />
                         <Icon className='icon-1' icon="prime:user-plus" />
                         <Icon className='icon-1' icon="octicon:trash-24" />
-                        <Icon className='icon-1' icon="bx:dots-vertical-rounded" />
+                        <div className='Dropdown3'>
+                            <div className=' menu-container3' ref={menuRef3}>
+                                <Icon className='icon-1 menu-trigger3' icon="bx:dots-vertical-rounded" onClick={() => { setOpen3(!open3) }} />
+                            </div>
+                            <div className={`Drop3 ${open3 ? 'active' : 'inactive'}`} >
+                                <ul>
+                                <div className='list1'>
+                                        <Icon className='icon-2'  icon="ph:folder-light" />
+                                        <li>Show file location</li>
+                                    </div>
+                                    <div className='list1'>
+                                        <Icon className='icon-2' icon="bi:folder-symlink" />
+                                        <li>Move to</li>
+                                    </div>
+                                    <div className='list1'>
+                                        <Icon className='icon-2'  icon="bi:star" />
+                                        <li>Add to Starred</li>
+                                    </div>
+                                    <div className='list1'>
+                                        <Icon className='icon-2' icon="mdi:folder-edit-outline" />
+                                        <li>Rename</li>
+                                    </div>
+                                    <div className='list1'>
+                                        <Icon className='icon-2'  icon="fluent:copy-16-regular" />
+                                        <li>Make a Copy</li>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </div>
                         <div className='home-b-1'></div>
                         <Icon className='icon-1' icon="eva:list-fill" />
                         <Icon className='icon-1' icon="fluent:info-20-regular" />

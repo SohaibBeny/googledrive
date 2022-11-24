@@ -60,16 +60,24 @@ export default function Home2() {
                             <div className={`Drop3 ${open3 ? 'active' : 'inactive'}`} >
                                 <ul>
                                     <div className='list1'>
-                                        <Icon className='icon-2' icon="material-symbols:create-new-folder-outline" />
-                                        <li>New Folder</li>
+                                        <Icon className='icon-2'  icon="ph:folder-light" />
+                                        <li>Show file location</li>
                                     </div>
                                     <div className='list1'>
-                                        <Icon className='icon-2' icon="ic:baseline-upload-file" />
-                                        <li>File Upload</li>
+                                        <Icon className='icon-2' icon="bi:folder-symlink" />
+                                        <li>Move to</li>
                                     </div>
                                     <div className='list1'>
-                                        <Icon className='icon-2' icon="material-symbols:drive-folder-upload-outline" />
-                                        <li>Folder Upload</li>
+                                        <Icon className='icon-2'  icon="bi:star" />
+                                        <li>Add to Starred</li>
+                                    </div>
+                                    <div className='list1'>
+                                        <Icon className='icon-2' icon="mdi:folder-edit-outline" />
+                                        <li>Rename</li>
+                                    </div>
+                                    <div className='list1'>
+                                        <Icon className='icon-2'  icon="fluent:copy-16-regular" />
+                                        <li>Make a Copy</li>
                                     </div>
 
                                 </ul>

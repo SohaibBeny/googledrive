@@ -53,6 +53,7 @@
 
 .home-2 h6 {
     font-family: Gilroy-Meduim, sans-serif;
+    margin-bottom: 5px;
 }
 
 .home-2-i {
@@ -118,6 +119,10 @@
 .home-3 {
     margin-top: 15px;
 }
+.home-3 h6 {
+    font-family: Gilroy-Meduim, sans-serif;
+    margin-bottom: 5px;
+}
 
 .home-3-i {
     background-color: white;
@@ -161,8 +166,8 @@ ul {
   
   .Drop1 {
     position: absolute;
-    top: 8.6rem;
-    left: 24.8rem;
+    top: 7.6rem;
+    left: 23.2rem;;
     background: #ffff;
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -174,7 +179,7 @@ ul {
   .Drop1.active {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateY(0px);
     transition: 500ms ease;
   
   }
@@ -196,10 +201,11 @@ ul {
     transition: 1000ms ease;
   }
   
-  .Drop1 ul li:hover img {
+  /* .Drop1 ul li:hover img {
     opacity: 1;
     cursor: pointer;
-  }
+  } */
+
  .list1{
     display: flex;
     align-items: center;

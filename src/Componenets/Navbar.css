@@ -5,7 +5,7 @@ padding: 0px;}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:97%;
+    width:98%;
     margin: auto;
     padding: 10px 0px;
 }
@@ -66,6 +66,122 @@ padding: 0px;}
 .nav-3 .icon-1{
     color: black;
 }
-.nav-3 img{
-    width: 35%;
+.profile img{
+    width: 45px;
+    margin-right: 4px;
 }
+
+/* dropdown4 /Profile*/
+.menu-trigger4 {
+    /* position: absolute; */
+    overflow: hidden;
+    cursor: pointer;
+  }
+.Drop4 {
+    position: absolute;
+    top: 10.3%;
+    left: 77.4%;
+    background:#FFFFFF;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 280px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    /* width: fit-content; */
+  }
+  
+  .Drop4.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: 500ms ease;
+  
+  }
+  
+  .Drop4.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: 500ms ease;
+  }
+  
+  /* .Drop4 ul li {
+    padding: 10px 20px;
+  } */
+  
+  .Drop4 .profile-info:hover {
+   
+    cursor: pointer;
+    transition: 1000ms ease;
+  }
+  
+  /* .Drop4 ul li:hover img {
+    opacity: 1;
+    cursor: pointer;
+  } */
+
+  .profile-info{
+    padding: 35px 0px ;
+  }
+  .profile-img{
+    position: relative;
+   text-align: center;
+
+  }
+  .profile-img img{
+    width: 77px;
+  }
+  .cam{
+    position: absolute;
+    left: 125px;
+    top: 50px;
+    color: #848484;
+    font-size: 17px;
+    background-color: #F5F9FA;
+    margin: 3px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 25%);
+   
+    
+  }
+  .profile-mail{
+    margin: 30px 0px;
+    text-align: center;
+  }
+  .profile-mail p{
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .profile-btn{
+    margin: 30px 0px;
+  }
+  .profile-btn button{
+    padding: 6px 34px;
+    font-size: 15px;
+    border-radius: 30px;
+    outline: none;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  .profile-btn-2 {
+    display: block;
+    margin: auto;
+    width: fit-content;
+
+  }
+  .profile-btn-2 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 64px;
+    border-radius: 30px;
+    outline: none;
+    background: #F5F9FA;
+    border: none;
+  }
+  .profile-btn-2 p{
+    margin-left: 15px;
+  }

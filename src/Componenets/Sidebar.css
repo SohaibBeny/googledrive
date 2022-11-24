@@ -142,6 +142,7 @@ padding: 0px}
     font-weight: bold;
     background-color: white;
     font-size: 16px;
+    margin-top: 10px;
 }
 /* ---------------- */
 /* dropdown */
@@ -153,8 +154,8 @@ padding: 0px}
   }
 .Drop2 {
     position: absolute;
-    top: 12.6rem;
-    left: 8.7rem;
+    top: 12.8rem;
+    left: 7.7rem;
     background: #ffff;
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 8px;

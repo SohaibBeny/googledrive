@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Componenets/Storage.css'
 import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 
 export default function Storage() {
     return (
@@ -21,7 +22,7 @@ export default function Storage() {
                         <Icon className='icon-1' icon="fluent:info-20-regular" />
                         <Icon className='icon-1' icon="bx:dots-vertical-rounded" />
                         <div className='home-b-1'></div>
-                        <p className='home6'>BackUp</p>
+                        <Link to={"/BackUp"}>  <p className='home6'>BackUp</p> </Link>
 
                     </div>
                 </div>

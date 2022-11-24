@@ -6,6 +6,9 @@
 /* --------------- */
 /* dropdown */
 
+.Dropdown3{
+  padding-bottom: 2.5px;
+}
 .menu-trigger3 {
     /* position: absolute; */
     overflow: hidden;
@@ -15,7 +18,7 @@
 .Drop3 {
     position: absolute;
     top: 7.6rem;
-    left: 63rem;
+    left: 54.6rem;
     background: #ffff;
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
